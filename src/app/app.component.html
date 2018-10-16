@@ -1,20 +1,99 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+<section id="container">
+  <header>
+
+
+
+    <app-nav> </app-nav>
+    <div class="logo">
+      <img src="../assets/img/logo.png" alt="">
+    </div>
+    <div class="title">
+      <h1>Diseño y Desarrollo Web</h1>
+      <h3>nuestro resultados conectan y crencen </h3>
+      <h3>con nuestros clientes</h3>
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="main-servicio" id="servicios">
+          <h1>SERVICIOS</h1>
+
+          <div class="servicio">
+              <div  class="servicio_card" *ngFor="let item of tiltes; index as i" [attr.data-index]="i" >
+                  <img [src]="'../.../../assets/img/' + tiltes[i].imagen" alt="" >
+                  <p>{{tiltes[i].titulo}}</p>
+              </div> 
+          </div>
+     
+          
+    </div>
+
+    <div class="main-soluciones" id="soluciones">
+      <h1>SOLUCIONES CON LAS MEJORES HERRAMIENTAS</h1>
+
+      <div class="soluciones">
+        <span>  <i class="fab fa-php"></i></span>
+        <span>  <i class="fab fa-java"></i></span>
+        <span>  <i class="fab fa-js-square"></i></span>
+        <span> <i class="fab fa-html5"></i></span>
+        <span> <i class="fab fa-css3-alt"></i></span>
+        <span>  <i class="fas fa-database"></i></span>
+      </div>
+    
+    </div>
+
+    <div class="main-nuestros_clientes" id="clientes">
+        <h1>NUESTROS CLIENTES</h1>
+
+        <div class="clientes">
+          <img src="../assets/img/zona.png" alt="">
+          <img src="../assets/img/sli.png" alt="">
+          <img src="../assets/img/columbia.png" alt="">
+          <img src="../assets/img/oster.png" alt="">
+         <img src="../assets/img/redelec.jpg" alt="">
+      </div>
+
+      </div>
+
+
+  </main>
+
+  <footer>
+
+    <div class="targe" id="contactenos">
+       <h3>¿NOS CUENTAS TU PROYECTO?</h3> 
+      <ul>
+        <li>Direccion:cra dsadsadsadsadasd</li>
+        <li>Telefonos: 321321321321</li>
+        <li>Movil: 321321321321</li>
+        <li>Email: logicalsistemas@info.com</li>
+      </ul>
+     </div>
+    <div class="targe">
+      <h3>¿QUÉ HACEMOS?</h3> 
+      <ul>
+        <li>Aplicaciones Web</li>
+        <li>Apliaciones Movil</li>
+        <li>Desarrollo Software</li>
+        <li>Webs Coporativas</li>
+      </ul> 
+    </div>
+      
+      <div class="targe" >
+        <img src="../assets/img/logo.png" alt="">
+      </div>
+
+  </footer>
+
+
+
+
+
+</section>

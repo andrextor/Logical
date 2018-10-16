@@ -1,0 +1,136 @@
+ nav{
+    margin: 0;
+    height: 500px;
+    width: 100%;
+    display: grid;
+    background: rgba(233, 23, 23, 0.5);
+    grid-template-rows: 1fr 3fr 1fr;
+    box-shadow: 7px 9px 5px 0px rgba(0,0,0,0.15);
+    /* border: 4px solid red; */
+  }
+  nav ul{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  nav ul li{
+      display: flex;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5em;
+    transition: 0.5s all;
+}
+  nav ul li a:hover{
+    font-size: 1.6em;
+    /* color:  rgba(209, 9, 9, 0.8); */
+    border-radius: 10px;
+    border-bottom: 2px solid rgba(233, 201, 201, 0.5);
+  }
+
+  nav .options{
+    display: grid;
+    align-content: center;
+  }
+  nav .logo img{
+      width: 100%;
+  }
+  nav .red{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   align-content: space-around;
+     transition: 0.5s all;
+  }
+  span i{
+    font-size: 48px; 
+    transition: 0.5s all;
+  }
+  .red span:nth-child(1):hover{
+    color: rgba(23, 72, 233, 0.6);
+  }
+  .red span:nth-child(2):hover{
+    color: rgba(134, 14, 138, 0.6);
+  }
+  .red span:nth-child(3):hover{
+    color: rgba(0, 236, 12, 0.6);
+  }
+
+  @media screen and (max-width:780px) {
+    
+    nav{
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      display: grid;
+      align-items: center;
+      grid-template-rows: 1fr;
+      box-shadow: 7px 9px 5px 0px rgba(0,0,0,0.15);
+    }
+
+
+    nav ul{
+      display: grid;
+      grid-template-columns:  repeat(5,1fr);
+    
+    }
+    nav li{
+      align-items: center;
+      justify-content: center;
+    }
+
+    nav ul li a{
+      color: white;
+      font-size: 0.9em;
+      /* font-weight: bold; */
+      text-decoration: none;
+      padding: 0.5em;
+      transition: 0.5s all;
+  }
+
+    nav .red{
+      display: none;
+     }
+
+    nav .logo{
+      display: none;
+    }
+
+    nav ul li a:hover{
+      font-size: 1.1em;
+      /* color:  rgba(209, 9, 9, 0.8); */
+      border-radius: 5px;
+      border-bottom: 2px solid rgba(233, 201, 201, 0.5);
+    }
+  }
+
+
+  @media screen and (max-width:550px) {
+    
+    nav .options{
+      display: grid;
+      justify-content: center;
+
+    }
+
+    nav ul{
+      display: grid;
+      justify-content: flex-start;
+      grid-template-columns:  1fr;
+    
+    }
+
+    nav .logo{
+      display: none;
+    }
+   
+  }
+
+
+  
+
